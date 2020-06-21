@@ -1,0 +1,32 @@
+/* NHS colour scheme: https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/nhs-digital-style-guidelines/how-we-look/colour-palette */
+
+/* Variables */
+:root {
+  --susi-yellow: #ffeb3b;
+  --susi-green: #007f3b;
+  --light-green: #A1C14E;
+  --nhs-blue: #005eb8;
+  --nhs-yellow: #ffb81c;
+  --nhs-dark-grey: #425563;
+  --nhs-mid-grey: #768692;
+  --nhs-grey-text: #212b32;
+  --susi-light-yellow: #f1bc4a;
+  --primary-font-family: "Montserrat", sans-serif;
+	--secondary-font-family: "Roboto", sans-serif;
+}
+
+/* NAVBAR */
+.nav-logo {
+  max-height: 50px;
+}
+
+/* NON-HOMEPAGE NAVBAR */
+.course_menu {
+  background-color: #fff;
+}
+
+/* GENERAL CLASSES */
+.text-right {
+  text-align: right;
+}
+
