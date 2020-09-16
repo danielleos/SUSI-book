@@ -12,7 +12,8 @@
   --nhs-grey-text: #212b32;
   --susi-light-yellow: #f1bc4a;
   --primary-font-family: "Montserrat", sans-serif;
-	--secondary-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Roboto", sans-serif;
+  --tertiary-font-family: "Poppins", sans-serif;
 }
 
 /* NAVBAR */
@@ -25,8 +26,149 @@
   background-color: #fff;
 }
 
-/* GENERAL CLASSES */
+/* GENERAL LAYOUT ETC. CLASSES */
 .text-right {
   text-align: right;
 }
 
+.text-left {
+  text-align: left;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+/* COMMON CLASSES */
+.offset { 
+  padding-top: 100px;
+}
+
+.footnote p {
+  color: var(--nhs-dark-grey);
+  font-size: 0.75rem;
+  margin: auto;
+  width: 80%;
+  text-align: right !important;
+}
+
+.footer-area p {
+  font-size: 0.7em;
+}
+
+@media only screen and (min-width: 348px) {
+  .footer-area p {
+    font-size: 0.9em;
+  }
+}
+
+/* PURPOSE SECTION */
+.purpose_part p {
+  font-family: "Poppins", sans-serif;
+}
+
+.purpose_part .purpose_text p {
+  color: var(--nhs-grey-text);
+  font-size: 1rem;
+  line-height: normal;
+  margin: auto;
+  margin-bottom: 2%;
+  width: 80%;
+  text-align: justify;
+}
+
+/* FEATURE PART */
+.learning_part p, .learning_part ul{
+  font-family: var(--tertiary-font-family);
+  font-size: 1rem;
+  color: var(--nhs-grey-text);
+}
+
+.learning_part ul.susi-summary li {
+  color: var(--nhs-grey-text);
+}
+
+/* RESOURCES PART */
+.special_course .resource-overview {
+  font-family: var(--tertiary-font-family);
+  color: var(--nhs-grey-text);
+  font-size: 1rem;
+  margin-bottom: 50px;
+}
+
+.resources-list {
+  text-align: center;
+  margin: auto;
+  list-style-type: none;
+  list-style-position: outside;
+  font-weight: 700;
+}
+
+.resources-list a {
+  color: var(--nhs-dark-grey);
+}
+
+.resources-list a:hover {
+  color: var(--nhs-yellow);
+}
+
+.resources-list span {
+  margin-right: 10px;
+}
+
+.content_text {
+  margin-bottom: 0;
+}
+
+.content_buttons {
+  margin: 50px 0 0 0;
+}
+
+.content_buttons .btn_2 {
+  margin: 0 10px;
+}
+
+.btn_2 .ti-new-window, .btn_2 .ti-download {
+  display: none;
+}
+
+.icon_swap {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .course_details_area p {
+    font-size: 0.8rem;
+  }
+  .btn_2 .ti-new-window, .btn_2 .ti-download {
+    display: block;
+  }
+  .icon_swap {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .course_details_area p {
+    font-size: 0.8rem;
+    width: 70%;
+  }
+  .content_buttons a:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 348px) {
+  .course_details_area p {
+    font-size: 0.8rem;
+    width: 62%;
+  }
+  .content_buttons a:first-child {
+    margin-bottom: 20px;
+  }
+  .content_buttons a:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* RESOURCE PAGES */
