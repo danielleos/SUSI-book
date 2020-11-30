@@ -96,61 +96,6 @@
   margin-right: 10%;
 }
 
-/* TRAINING SECTION */
-.learning_part p, .learning_part ul{
-  font-family: var(--tertiary-font-family);
-  font-size: 1rem;
-  color: var(--nhs-grey-text);
-}
-
-.learning_part ul.susi-summary li {
-  color: var(--nhs-grey-text);
-}
-
-.learning_part .title-with-icon { 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.learning_part .title-with-icon h4 {
-  padding-left: 16px;
-}
-
-.learning_part button {
-  margin-bottom: 16px;
-  max-width: 145px;
-  width: 120px;
-}
-
-@media (max-width: 576px) {
-  .learning_part .title-with-icon { 
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .learning_part .title-with-icon h4 {
-    text-align: center;
-    padding-left: 0;
-  }
-
-  .learning_part .collapse .collapse-content {
-    margin-top: 16px;
-  }
-}
-
-
-/* TESTIMONIALS SECTION */
-/* @media only screen and (max-width: 576px) {
-  .testimonial_slider_img img {
-    display: none !important;
-  }
-} */
-
-.testimonial_part .testimonial_slider_text p {
-  margin-bottom: 8px;
-}
 
 /* RESOURCES SECTION */
 .special_course .resource-overview {
@@ -252,6 +197,85 @@
 }
 
 /* RESOURCE PAGES */
+.course_details_area .content_text p {
+  margin-bottom: 16px;
+}
+
+/* TESTIMONIALS SECTION */
+.testimonial_part .testimonial_slider_text p {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 576px) {
+  .owl-stage {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .owl-dots {
+    display: none;
+  }
+}
+
+.testimonial_part .center-item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* TRAINING SECTION */
+.learning_part p, .learning_part ul{
+  font-family: var(--tertiary-font-family);
+  font-size: 1rem;
+  color: var(--nhs-grey-text);
+}
+
+.learning_part ul.susi-summary li {
+  color: var(--nhs-grey-text);
+}
+
+.learning_part .title-with-icon { 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.learning_part .title-with-icon h4 {
+  padding: 0 5px 0 16px;
+}
+
+.learning_part button {
+  margin-bottom: 16px;
+  max-width: 145px;
+  width: 120px;
+}
+
+@media (max-width: 576px) {
+  .learning_part .title-with-icon { 
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .learning_part .title-with-icon h4 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .learning_part .collapse .collapse-content {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .training-flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
 /* FOOTER AREA */
 .footer-area p {
@@ -263,6 +287,15 @@
     font-size: 0.9em;
   }
 }
+
+.footer-area a {
+  color: var(--nhs-grey-text);
+}
+
+.footer-area a:hover {
+  text-decoration: underline;
+}
+
 
 .footer-area .logo, .footer-area .susi-logo {
   display: flex;
