@@ -49,7 +49,7 @@
       dots: true,
       autoplay: true,
       autoplayHoverPause: true,
-      autoplayTimeout: 5000,
+      autoplayTimeout: 10000,
       nav: false,
       responsive: {
         0: {
